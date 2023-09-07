@@ -37,10 +37,9 @@ pip install pyperclip
 5. Anda dapat menyalin kunci putaran dan teks sandi ke clipboard menggunakan tombol "Salin" yang disediakan.
 
 ## Tangkapan Layar
-![Tangkapan Layar Aplikasi](screenshot.png)
+![Tangkapan Layar Aplikasi]()![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/0a134186-58de-45c7-9ae4-365d1e2e04c8)
+
 
 ## Lisensi
 Proyek ini dilisensikan di bawah GNU General Public License (GPL). Lihat berkas [LICENSE](LICENSE) untuk rincian lebih lanjut.
 ```
-
-Setelah membuat berkas `README.md` ini, Anda dapat meng-commitnya ke repositori GitHub Anda untuk memberikan dokumentasi untuk proyek Enkripsi S-DES Anda. Pastikan juga untuk menyertakan tangkapan layar aplikasi Anda yang dapat diganti dengan nama berkas tangkapan layar sesuai dengan yang Anda miliki.
