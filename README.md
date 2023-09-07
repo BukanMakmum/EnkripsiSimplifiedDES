@@ -1,6 +1,5 @@
 Tentu, berikut adalah `README.md` berdasarkan koding yang telah Anda berikan dalam bahasa Indonesia dan dengan lisensi GNU General Public License (GPL):
 
-```markdown
 # Enkripsi S-DES dengan Python dan Tkinter
 
 Ini adalah implementasi sederhana dari algoritma Enkripsi Data Standard yang Disederhanakan (S-DES) menggunakan Python dan Tkinter untuk antarmuka pengguna grafis (GUI).
