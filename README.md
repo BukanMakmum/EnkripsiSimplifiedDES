@@ -35,7 +35,8 @@ pip install pyperclip
 5. Anda dapat menyalin kunci putaran dan teks sandi ke clipboard menggunakan tombol "Salin" yang disediakan.
 
 ## Tangkapan Layar
-![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/40d3d80b-b109-4c78-85dd-bdbc275051a8)
+![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/39fb4ce4-aa8b-4f6c-b725-1d7205a4e1ad)
+
 
 ## Lisensi
 Proyek ini dilisensikan di bawah GNU General Public License (GPL). Lihat berkas [LICENSE](LICENSE) untuk rincian lebih lanjut.
