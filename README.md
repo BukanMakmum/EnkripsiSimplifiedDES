@@ -26,6 +26,7 @@ Sebelum menjalankan aplikasi, pastikan Anda telah menginstal Python dan pustaka-
 Anda dapat menginstal `pyperclip` menggunakan pip:
 
 ```bash
+python -m pip install tk
 pip install pyperclip
 ```
 
@@ -41,4 +42,4 @@ pip install pyperclip
 
 ## Lisensi
 Proyek ini dilisensikan di bawah GNU General Public License (GPL). Lihat berkas [LICENSE](LICENSE) untuk rincian lebih lanjut.
-```
+
