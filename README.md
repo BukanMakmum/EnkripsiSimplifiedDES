@@ -30,7 +30,7 @@ pip install pyperclip
 ```
 
 ## Penggunaan
-1. Jalankan skrip `sdes_gui.py`.
+1. Jalankan skrip `enkripsi.py`.
 2. Masukkan pesan teks (desimal) dan kunci (desimal) ke dalam kolom input yang sesuai.
 3. Klik tombol "Enkripsi" untuk melakukan enkripsi.
 4. Aplikasi akan menampilkan kunci putaran, representasi biner dari pesan teks dan kunci, teks sandi (biner), dan teks sandi (desimal).
