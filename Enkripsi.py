@@ -178,11 +178,11 @@ reset_button.grid(row=2, column=0, sticky=tk.W)
 
 # Label untuk menampilkan hasil enkripsi
 result_label = ttk.Label(window, text="", foreground="black", font=("Arial", 10), relief="flat")
-result_label.grid(row=3, columnspan=2, pady=(20, 0))
+result_label.grid(row=3, columnspan=2, pady=(15, 5))
 
 # Tombol "Copy Hasil" untuk menyalin hasil enkripsi ke clipboard (dibuat terlebih dahulu tetapi tidak ditampilkan)
 copy_button = ttk.Button(window, text="Copy Hasil", command=copy_button_clicked)
-copy_button.grid(row=5, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
+copy_button.grid(row=5, column=0, columnspan=2, pady=(20, 10), sticky=tk.NSEW)
 copy_button.grid_remove()
 
 # Menambahkan keterangan hak cipta di tengah bawah
