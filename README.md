@@ -54,7 +54,7 @@ Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
 
 ## Tangkapan Layar
 
-Tangkapan layar antarmuka pengguna grafis (GUI) untuk kedua skrip enkripsi dan dekripsi dapat ditemukan dalam folder `tangkapan-layar`.
+![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/69cc98de-0b15-4232-a1f7-62452b81489d)
 
 ## Lisensi
 
