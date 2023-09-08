@@ -16,8 +16,8 @@ Repository ini berisi skrip Python untuk melakukan enkripsi dan dekripsi S-DES m
 S-DES (Simplified Data Encryption Standard) adalah cipher blok kunci simetris yang beroperasi pada blok data kecil. Ini menggunakan kunci 10 bit untuk mengenkripsi dan mendekripsi plaintext atau ciphertext 8 bit. Repositori ini menyediakan skrip Python untuk melakukan enkripsi dan dekripsi S-DES.
 
 Repository ini berisi dua skrip:
-- `sdes_encrypt.py`: Skrip ini memungkinkan Anda untuk mengenkripsi plaintext 8 bit menggunakan kunci 10 bit.
-- `sdes_decrypt.py`: Skrip ini memungkinkan Anda untuk mendekripsi ciphertext 8 bit menggunakan kunci 10 bit.
+- `Enkripsi.py`: Skrip ini memungkinkan Anda untuk mengenkripsi plaintext 8 bit menggunakan kunci 10 bit.
+- `Dekripsi.py`: Skrip ini memungkinkan Anda untuk mendekripsi ciphertext 8 bit menggunakan kunci 10 bit.
 
 Kedua skrip ini mencakup antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter untuk kemudahan penggunaan.
 
