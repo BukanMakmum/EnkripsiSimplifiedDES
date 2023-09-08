@@ -1,49 +1,69 @@
-# Enkripsi S-DES dengan Python dan Tkinter
+# Enkripsi dan Dekripsi S-DES
 
-Ini adalah implementasi sederhana dari algoritma Enkripsi Data Standard yang Disederhanakan (S-DES) menggunakan Python dan Tkinter untuk antarmuka pengguna grafis (GUI).
+Repository ini berisi skrip Python untuk melakukan enkripsi dan dekripsi S-DES menggunakan antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter. S-DES (Simplified Data Encryption Standard) adalah versi yang disederhanakan dari algoritma Data Encryption Standard (DES).
 
-## Daftar Isi
-- [Deskripsi](#deskripsi)
-- [Persyaratan](#persyaratan)
-- [Penggunaan](#penggunaan)
-- [Tangkapan Layar](#tangkapan-layar)
-- [Lisensi](#lisensi)
+## Isi
 
-## Deskripsi
-S-DES adalah versi disederhanakan dari algoritma Data Encryption Standard (DES). Ini digunakan untuk melakukan enkripsi pada pesan teks biasa 8-bit dengan kunci 10-bit, menghasilkan teks sandi 8-bit.
+1. [Pendahuluan](#pendahuluan)
+2. [Ketergantungan](#ketergantungan)
+3. [Penggunaan](#penggunaan)
+4. [Tangkapan Layar](#tangkapan-layar)
+5. [Lisensi](#lisensi)
+6. [Kontak](#kontak)
 
-Proyek ini menyediakan GUI yang ramah pengguna yang memungkinkan Anda untuk mengenkripsi pesan teks menggunakan S-DES dengan kunci yang ditentukan. Ini juga menampilkan representasi biner dari teks biasa, kunci, dan kunci putaran, bersama dengan teks sandi dalam format biner dan desimal.
+## Pendahuluan
 
-## Persyaratan
-Sebelum menjalankan aplikasi, pastikan Anda telah menginstal Python dan pustaka-pustaka berikut:
+S-DES (Simplified Data Encryption Standard) adalah cipher blok kunci simetris yang beroperasi pada blok data kecil. Ini menggunakan kunci 10 bit untuk mengenkripsi dan mendekripsi plaintext atau ciphertext 8 bit. Repositori ini menyediakan skrip Python untuk melakukan enkripsi dan dekripsi S-DES.
 
-- `tkinter`: Pustaka GUI standar Python.
-- `pyperclip`: Untuk menyalin hasil ke clipboard.
+Repository ini berisi dua skrip:
+- `sdes_encrypt.py`: Skrip ini memungkinkan Anda untuk mengenkripsi plaintext 8 bit menggunakan kunci 10 bit.
+- `sdes_decrypt.py`: Skrip ini memungkinkan Anda untuk mendekripsi ciphertext 8 bit menggunakan kunci 10 bit.
 
-Anda dapat menginstal `pyperclip` menggunakan pip:
+Kedua skrip ini mencakup antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter untuk kemudahan penggunaan.
 
-```bash
-python -m pip install tk
-pip install pyperclip
-```
+## Ketergantungan
+
+Library Python berikut diperlukan untuk menjalankan skrip:
+- `tkinter`: Digunakan untuk membangun antarmuka pengguna grafis (GUI).
+- `pyperclip`: Digunakan untuk menyalin hasil ke clipboard.
+- `webbrowser`: Digunakan untuk membuka tautan alamat email.
 
 ## Penggunaan
-1. Jalankan skrip `enkripsi.py`.
-2. Masukkan pesan teks (biner dengan panjang 8 bit) dan kunci (biner dengan panjang 10 bit) ke dalam kolom input yang sesuai.
-3. Klik tombol "Enkripsi" untuk melakukan enkripsi.
-4. Aplikasi akan menampilkan kunci putaran, representasi biner dari pesan teks dan kunci, teks sandi (biner), dan teks sandi (desimal).
-5. Anda dapat menyalin hasil/output ke clipboard menggunakan tombol "Copy Hasil" yang disediakan.
+
+### Enkripsi
+
+Untuk melakukan enkripsi S-DES, ikuti langkah-langkah berikut:
+
+1. Jalankan skrip `Enkripsi.py`.
+2. Masukkan plaintext 8 bit dalam kolom input "Plaintext (8 bit)".
+3. Masukkan kunci 10 bit dalam kolom input "Kunci (10 bit)".
+4. Klik tombol "Encrypt" untuk melakukan enkripsi.
+5. Ciphertext akan ditampilkan dalam area hasil.
+6. Anda dapat mengklik tombol "Salin Hasil" untuk menyalin ciphertext ke clipboard.
+
+### Dekripsi
+
+Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
+
+1. Jalankan skrip `Dekripsi.py`.
+2. Masukkan ciphertext 8 bit dalam kolom input "Ciphertext (8 bit)".
+3. Masukkan kunci 10 bit dalam kolom input "Kunci (10 bit)".
+4. Klik tombol "Decrypt" untuk melakukan dekripsi.
+5. Plaintext akan ditampilkan dalam area hasil.
+6. Anda dapat mengklik tombol "Salin Hasil" untuk menyalin plaintext ke clipboard.
 
 ## Tangkapan Layar
-![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/e4459c06-ed26-400a-bf2e-22c8faf616e0)
 
-![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/49f15093-40bf-46f0-8539-ebf1010eb8e4)
-
-
-
-
-
+Tangkapan layar antarmuka pengguna grafis (GUI) untuk kedua skrip enkripsi dan dekripsi dapat ditemukan dalam folder `tangkapan-layar`.
 
 ## Lisensi
-Proyek ini dilisensikan di bawah GNU General Public License (GPL). Lihat berkas [LICENSE](LICENSE) untuk rincian lebih lanjut.
 
+Projek ini dilisensikan di bawah Lisensi MIT - lihat berkas [LICENSE](LICENSE) untuk detailnya.
+
+## Kontak
+
+Untuk pertanyaan atau umpan balik, silakan hubungi pengembang:
+- Nama: [Bukan Makmum]
+- Email: [imamsyt22@mhs.usk.ac.id]
+
+© 2023 @BukanMakmum.
