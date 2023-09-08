@@ -54,7 +54,8 @@ Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
 
 ## Tangkapan Layar
 
-![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/a46ae6f5-4259-47e7-9aba-d64888d26e12)
+![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/92cbe6b5-621c-4181-b350-a9176ede6115)
+
 
 ## Lisensi
 
