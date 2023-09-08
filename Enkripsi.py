@@ -112,11 +112,11 @@ def encrypt_button_clicked():
         return
 
     # Periksa panjang plaintext dan kunci
-    if len(plaintext) > 8:
+    if len(plaintext) != 8:
         messagebox.showerror("Error", "Plaintext harus 8 bit biner")
         return
 
-    if len(key) > 10:
+    if len(key) != 10:
         messagebox.showerror("Error", "Kunci harus 10 bit biner")
         return
 
@@ -128,26 +128,28 @@ def encrypt_button_clicked():
     ciphertext = sdes_encrypt(plaintext, key)
 
     # Tampilkan hasil enkripsi dengan properti teks yang diubah
-    result_label.config(text="Ciphertext: " + ciphertext, foreground="red", font=("Arial", 12, "bold"))
+    result_label.config(
+        text="Ciphertext: " + ciphertext,
+        foreground="red",
+        font=("Arial", 12, "bold"),
+        justify="center",
+        anchor="center"
+    )
 
     # Menampilkan tombol "Copy Hasil"
     copy_button.grid(row=4, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
-
-    # Menambahkan border pada hasil
-    result_label.config(borderwidth=2, relief="groove")  # Menambahkan border dan mengubah jenis relief
 
 # Fungsi untuk mereset input dan hasil
 def reset_button_clicked():
     plaintext_entry.delete(0, tk.END)
     key_entry.delete(0, tk.END)
-    result_label.config(text="", foreground="black", font=("Arial", 10))  # Mengembalikan properti teks ke default
-    result_label.config(borderwidth=0, relief="flat")  # Menghapus border dan mengatur relief ke "flat" pada hasil
-    copy_button.grid_remove()  # Menghilangkan tombol "Copy Hasil" saat hasil dihapus atau direset
+    result_label.config(text="", foreground="black", font=("Arial", 10), relief="flat")
+    copy_button.grid_remove()
 
 # Fungsi untuk menyalin hasil ke clipboard
 def copy_button_clicked():
     ciphertext = result_label.cget("text")
-    pyperclip.copy(ciphertext)  # Menyalin ciphertext ke clipboard
+    pyperclip.copy(ciphertext)
     messagebox.showinfo("Info", "Hasil enkripsi telah disalin ke clipboard")
 
 # Membuat jendela utama
@@ -175,13 +177,13 @@ reset_button = ttk.Button(window, text="Reset", command=reset_button_clicked)
 reset_button.grid(row=2, column=0, sticky=tk.W)
 
 # Label untuk menampilkan hasil enkripsi
-result_label = ttk.Label(window, text="", foreground="black", font=("Arial", 10))
-result_label.grid(row=3, columnspan=2, pady=(20, 0)) 
+result_label = ttk.Label(window, text="", foreground="black", font=("Arial", 10), relief="flat")
+result_label.grid(row=3, columnspan=2, pady=(20, 0))
 
 # Tombol "Copy Hasil" untuk menyalin hasil enkripsi ke clipboard (dibuat terlebih dahulu tetapi tidak ditampilkan)
 copy_button = ttk.Button(window, text="Copy Hasil", command=copy_button_clicked)
 copy_button.grid(row=5, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
-copy_button.grid_remove()  # Menyembunyikan tombol "Copy Hasil" saat awal aplikasi
+copy_button.grid_remove()
 
 # Menambahkan keterangan hak cipta di tengah bawah
 copyright_label = ttk.Label(window, text="© 2023 @BukanMakmum.", foreground="gray", cursor="hand2")
