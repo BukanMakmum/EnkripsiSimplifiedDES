@@ -29,13 +29,14 @@ pip install pyperclip
 
 ## Penggunaan
 1. Jalankan skrip `enkripsi.py`.
-2. Masukkan pesan teks (desimal) dan kunci (desimal) ke dalam kolom input yang sesuai.
+2. Masukkan pesan teks (biner dengan panjang 8 bit) dan kunci (biner dengan panjang 10 bit) ke dalam kolom input yang sesuai.
 3. Klik tombol "Enkripsi" untuk melakukan enkripsi.
 4. Aplikasi akan menampilkan kunci putaran, representasi biner dari pesan teks dan kunci, teks sandi (biner), dan teks sandi (desimal).
 5. Anda dapat menyalin hasil/output ke clipboard menggunakan tombol "Copy Hasil" yang disediakan.
 
 ## Tangkapan Layar
-![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/39fb4ce4-aa8b-4f6c-b725-1d7205a4e1ad)
+![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/b1a026c8-fbc9-44aa-b697-e6029fa585de)
+
 
 
 ## Lisensi
