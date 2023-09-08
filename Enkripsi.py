@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 import pyperclip
+import webbrowser  # Import modul webbrowser
 
 # Fungsi S-DES Encryption
 def sdes_encrypt(plaintext, key):
@@ -132,12 +133,16 @@ def encrypt_button_clicked():
     # Menampilkan tombol "Copy Hasil"
     copy_button.grid(row=4, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
 
+    # Menambahkan border pada hasil
+    result_label.config(borderwidth=2, relief="groove")  # Menambahkan border dan mengubah jenis relief
+
 # Fungsi untuk mereset input dan hasil
 def reset_button_clicked():
     plaintext_entry.delete(0, tk.END)
     key_entry.delete(0, tk.END)
     result_label.config(text="", foreground="black", font=("Arial", 10))  # Mengembalikan properti teks ke default
-    copy_button.grid_forget()  # Menyembunyikan tombol "Copy Hasil" jika hasil dihapus atau reset
+    result_label.config(borderwidth=0, relief="flat")  # Menghapus border dan mengatur relief ke "flat" pada hasil
+    copy_button.grid_remove()  # Menghilangkan tombol "Copy Hasil" saat hasil dihapus atau direset
 
 # Fungsi untuk menyalin hasil ke clipboard
 def copy_button_clicked():
@@ -169,14 +174,28 @@ encrypt_button.grid(row=2, column=1, sticky=tk.E)
 reset_button = ttk.Button(window, text="Reset", command=reset_button_clicked)
 reset_button.grid(row=2, column=0, sticky=tk.W)
 
-# Tombol "Copy Hasil" untuk menyalin hasil enkripsi ke clipboard (dibuat terlebih dahulu tetapi tidak ditampilkan)
-copy_button = ttk.Button(window, text="Copy Hasil", command=copy_button_clicked)
-copy_button.grid(row=4, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
-copy_button.grid_remove()  # Menyembunyikan tombol "Copy Hasil" saat awal aplikasi
-
 # Label untuk menampilkan hasil enkripsi
 result_label = ttk.Label(window, text="", foreground="black", font=("Arial", 10))
-result_label.grid(row=3, columnspan=2)
+result_label.grid(row=3, columnspan=2, pady=(20, 0)) 
+
+# Tombol "Copy Hasil" untuk menyalin hasil enkripsi ke clipboard (dibuat terlebih dahulu tetapi tidak ditampilkan)
+copy_button = ttk.Button(window, text="Copy Hasil", command=copy_button_clicked)
+copy_button.grid(row=5, column=0, columnspan=2, pady=(10, 20), sticky=tk.NSEW)
+copy_button.grid_remove()  # Menyembunyikan tombol "Copy Hasil" saat awal aplikasi
+
+# Menambahkan keterangan hak cipta di tengah bawah
+copyright_label = ttk.Label(window, text="© 2023 @BukanMakmum.", foreground="gray", cursor="hand2")
+copyright_label.grid(row=5, column=0, columnspan=2, pady=(0, 10), sticky=tk.NSEW)
+
+# Mengatur teks hak cipta menjadi rata tengah horizontal
+copyright_label.configure(anchor="center", justify="center")
+
+# Fungsi untuk mengarahkan ke alamat email saat teks hak cipta diklik
+def open_email(event):
+    webbrowser.open("mailto:imamsayuti.usk@gmail.com")
+
+# Menghubungkan fungsi dengan klik pada teks hak cipta
+copyright_label.bind("<Button-1>", open_email)
 
 # Menjalankan loop utama GUI
 window.mainloop()
