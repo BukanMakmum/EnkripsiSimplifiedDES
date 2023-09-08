@@ -37,8 +37,9 @@ pip install pyperclip
 ## Tangkapan Layar
 ![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/e4459c06-ed26-400a-bf2e-22c8faf616e0)
 
+![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/49f15093-40bf-46f0-8539-ebf1010eb8e4)
 
-![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/3521431b-3290-4c84-b041-5a2fcff81c7c)
+
 
 
 
