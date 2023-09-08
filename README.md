@@ -35,7 +35,8 @@ pip install pyperclip
 5. Anda dapat menyalin hasil/output ke clipboard menggunakan tombol "Copy Hasil" yang disediakan.
 
 ## Tangkapan Layar
-![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/b1a026c8-fbc9-44aa-b697-e6029fa585de)
+![Output](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/e4459c06-ed26-400a-bf2e-22c8faf616e0)
+
 
 
 
