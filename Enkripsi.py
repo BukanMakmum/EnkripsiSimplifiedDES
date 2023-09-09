@@ -47,8 +47,8 @@ def sdes_encrypt(plaintext, key):
         key_right_shifted = left_shift(key_right_shifted, 2)
         subkey2 = permute(key_left_shifted + key_right_shifted, P8)
 
-        print("Subkey 1:", subkey1)  # Menampilkan subkey 1
-        print("Subkey 2:", subkey2)  # Menampilkan subkey 2
+        print("Ronde 1:", subkey1)  # Menampilkan subkey 1
+        print("Ronde 2:", subkey2)  # Menampilkan subkey 2
 
         return subkey1, subkey2
 
