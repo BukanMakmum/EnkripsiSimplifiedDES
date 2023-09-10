@@ -67,4 +67,4 @@ Untuk pertanyaan atau umpan balik, silakan hubungi pengembang:
 - Nama: [Bukan Makmum]
 - Email: [imamsyt22@mhs.usk.ac.id]
 
-© 2023 @BukanMakmum.
+© 2023 BukanMakmum.
