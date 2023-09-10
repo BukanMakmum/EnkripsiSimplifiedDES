@@ -186,7 +186,7 @@ copy_button.grid(row=5, column=0, columnspan=2, pady=(20, 10), sticky=tk.NSEW)
 copy_button.grid_remove()
 
 # Menambahkan keterangan hak cipta di tengah bawah
-copyright_label = ttk.Label(window, text="© 2023 @BukanMakmum.", foreground="gray", cursor="hand2")
+copyright_label = ttk.Label(window, text="© 2023 BukanMakmum.", foreground="gray", cursor="hand2")
 copyright_label.grid(row=5, column=0, columnspan=2, pady=(0, 10), sticky=tk.NSEW)
 
 # Mengatur teks hak cipta menjadi rata tengah horizontal
