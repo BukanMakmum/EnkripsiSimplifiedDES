@@ -52,6 +52,12 @@ Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
 5. Plaintext akan ditampilkan dalam area hasil.
 6. Anda dapat mengklik tombol "Salin Hasil" untuk menyalin plaintext ke clipboard.
 
+### - Contoh Inpu dan Output
+  ```bash
+  Plaintext:   00000001
+  Key:         1001011000
+  Ciphertext:  01101010
+   ```
 ## Tangkapan Layar
 
 ![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/92cbe6b5-621c-4181-b350-a9176ede6115)
