@@ -16,8 +16,7 @@ Repository ini berisi skrip Python untuk melakukan enkripsi dan dekripsi S-DES m
 S-DES (Simplified Data Encryption Standard) adalah cipher blok kunci simetris yang beroperasi pada blok data kecil. Ini menggunakan kunci 10 bit untuk mengenkripsi dan mendekripsi plaintext atau ciphertext 8 bit. Repositori ini menyediakan skrip Python untuk melakukan enkripsi dan dekripsi S-DES.
 
 Repository ini berisi dua skrip:
-- `Enkripsi.py`: Skrip ini memungkinkan Anda untuk mengenkripsi plaintext 8 bit menggunakan kunci 10 bit.
-- `Dekripsi.py`: Skrip ini memungkinkan Anda untuk mendekripsi ciphertext 8 bit menggunakan kunci 10 bit.
+- `DESv1.0.py atau sesuai versi`: Skrip ini memungkinkan Anda untuk mengenkripsi plaintext 8 bit menggunakan kunci 10 bit.
 
 Kedua skrip ini mencakup antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter untuk kemudahan penggunaan.
 
@@ -34,7 +33,7 @@ Library Python berikut diperlukan untuk menjalankan skrip:
 
 Untuk melakukan enkripsi S-DES, ikuti langkah-langkah berikut:
 
-1. Jalankan skrip `Enkripsi.py`.
+1. Jalankan skrip `DESv1.0.py atau sesuai versi`.
 2. Masukkan plaintext 8 bit dalam kolom input "Plaintext (8 bit)".
 3. Masukkan kunci 10 bit dalam kolom input "Kunci (10 bit)".
 4. Klik tombol "Encrypt" untuk melakukan enkripsi.
@@ -45,7 +44,7 @@ Untuk melakukan enkripsi S-DES, ikuti langkah-langkah berikut:
 
 Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
 
-1. Jalankan skrip `Dekripsi.py`.
+1. Jalankan skrip `DESv1.0.py atau sesuai versi`.
 2. Masukkan ciphertext 8 bit dalam kolom input "Ciphertext (8 bit)".
 3. Masukkan kunci 10 bit dalam kolom input "Kunci (10 bit)".
 4. Klik tombol "Decrypt" untuk melakukan dekripsi.
@@ -60,7 +59,8 @@ Untuk melakukan dekripsi S-DES, ikuti langkah-langkah berikut:
    ```
 ## Tangkapan Layar
 
-![Hasil](https://github.com/BukanMakmum/EnkripsiSimplifiedDES/assets/32379649/92cbe6b5-621c-4181-b350-a9176ede6115)
+![Hasil](https://github.com/BukanMakmum/SimplifiedDES/assets/32379649/7c05bea0-789e-4953-9de8-23c20ef30926)
+
 
 
 ## Lisensi
