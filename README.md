@@ -1,6 +1,6 @@
 # Enkripsi dan Dekripsi S-DES
 
-Repository ini berisi skrip Python untuk melakukan enkripsi dan dekripsi S-DES menggunakan antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter. S-DES (Simplified Data Encryption Standard) adalah versi yang disederhanakan dari algoritma Data Encryption Standard (DES).
+Repository ini berisi source code Python untuk melakukan enkripsi dan dekripsi S-DES menggunakan antarmuka pengguna grafis (GUI) yang dibangun dengan Tkinter. S-DES (Simplified Data Encryption Standard) adalah versi yang disederhanakan dari algoritma Data Encryption Standard (DES). S-DES (Simplified Data Encryption Standard) Education merupakan source code yang dikembangkan untuk pembelajaran proses enkripsi dan dekripsi menggunakan S-DES.
 
 ## Isi
 
