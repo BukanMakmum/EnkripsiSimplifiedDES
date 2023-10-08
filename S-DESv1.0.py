@@ -226,6 +226,7 @@ def center_window(window, width, height):
 # Membuat jendela tkinter
 window = tk.Tk()
 window.title("Simplified DES")
+window.configure(bg="#2596be")  # Mengatur warna latar belakang jendela utama
 
 # Mengatur ukuran jendela
 window_width = 320
@@ -248,11 +249,11 @@ app_version = "Education 1.0"
 judul_jendela = window.title()
 
 # Label judul dengan font yang lebih besar dan warna teks
-title_label = ttk.Label(window, text=judul_jendela, font=("Helvetica", 18, "bold"))
+title_label = ttk.Label(window, text=judul_jendela, font=("Helvetica", 18, "bold"), background=window.cget('bg'))
 title_label.pack(pady=(20, 5))  # Padding atas 20, bawah 5
 
 # Label versi dengan font yang lebih kecil
-version_label = ttk.Label(window, text=f"Versi {app_version}", font=("Helvetica", 10))
+version_label = ttk.Label(window, text=f"Versi {app_version}", font=("Helvetica", 10), background=window.cget('bg'))
 version_label.pack()
 
 # Agar label versi berada di bawah label judul
